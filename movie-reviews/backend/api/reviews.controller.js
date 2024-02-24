@@ -18,7 +18,7 @@ export default class ReviewsController{
                 review,
                 date
             )
-            res.json({ status: "success "})
+            res.json({ status: "success"})
         }catch(e) {
             res.status(500).json({ error: e.message})
         }
@@ -46,7 +46,7 @@ export default class ReviewsController{
             if(ReviewResponse.modifiedCount === 0){
                 throw new Error ("unable to update review. User may not be original poster")
             }
-            res.json({status: "success "})
+            res.json({status: "success"})
         }catch (e){
             res.status(500).json({ error: e.message})
         }
@@ -61,7 +61,7 @@ export default class ReviewsController{
                 userId,
             )
 
-            res.json({ status: "success "})
+            res.json({ status: "success"})
         }catch (e) {
             res.status(500).json({error: e.message})
         }
