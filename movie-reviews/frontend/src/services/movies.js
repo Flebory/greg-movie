@@ -35,3 +35,4 @@ class MovieDataService {
         return axios.get("http://localhost:5001/api/v1/movies/ratings")
     }
 }
+export default new MovieDataService()
